@@ -37,7 +37,6 @@
     - name: Pull the latest code
       git:
         repo: https://github.com/thejaswini24/tes.git
-
         dest: "{{ pkgname }}"
         version: main
         force: yes

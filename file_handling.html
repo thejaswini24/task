@@ -1,0 +1,15 @@
+<h1>ansible dev -b -m copy -a "src=/home/ansible/example.txt dest=/home/ansible/"</h1>
+<h1>ansible dev -b -m copy -a "src=/home/ansible/exam.txt dest=/home/ansible/"</h1>
+<h1>ansible dev -b -m file -a "path=/home/ansible/exam.txt state=absent"</h1>
+<h1>ansible dev -b -m shell -a "cd /home/ansible/web"</h1>
+<h1>ansible dev -b -m file -a "path=/home/ansible/html state=directory"</h1>
+<h1>ansible dev -b -m file -a "path=/home/ansible/html state=absent"</h1>
+<h1>ansible dev -b -m file -a "path=/home/ansible/css.txt state=touch"</h1>
+<h1>ansible dev -b -m file -a "path=/home/ansible/css.txt state=absent" </h1>
+<h1>ansible dev -b -m file -a "path=/home/ansible/js.txt state=touch mode=0777"</h1>
+<h1>ansible dev -b -m file -a "path=/home/ansible/js.txt state=absent mode=0777"</h1>
+<h1>ansible dev -b -m package -a "name=git state=installed"</h1>
+<h1>ansible dev -b -m package -a "name=docker state=installed" </h1>
+<h1>ansible dev -b -m shell -a "docker pull httpd"</h1>
+<h1>ansible dev -b -m shell -a "docker run -d --name httpd-container httpd"</h1>
+<h1>ansible dev -b -m command -a "git clone "https://github.com/thejaswini24/tes.git</h1>

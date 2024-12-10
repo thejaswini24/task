@@ -1,0 +1,17 @@
+---
+- name: java and maven
+  hosts: dev
+  user: ansible
+  become: yes
+  connection: ssh
+  tasks:
+    - name: install java
+      yum:
+        name: java-17
+        state: present
+    - name: file tranfer
+      copy:
+        src: /home/ansible/maven.sh
+        dest: /home/ansible
+    - name: execute file
+      shell: sh maven.sh
